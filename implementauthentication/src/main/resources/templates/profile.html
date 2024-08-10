@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>
+            Profile
+        </title>
+    </head>
+
+    <body>
+        <h2>
+            Profile
+        </h2>
+
+        <label>Username: </label><label th:text="${user.username}"/></label> <br>
+        <label>Email: </label><label th:text="${user.email}"/></label> <br>
+        <br>
+        <div>
+             <a th:href="@{'/User/logout'}">Log out</a>
+        </div>
+    </body>
+</html>
